@@ -15,6 +15,7 @@ import { DesestructuracionArreglosComponent } from './bases/07-desestructuracion
 import { ImportExportComponent } from './bases/08-import-export';
 import { PromesasComponent } from './bases/09-promesas';
 import { FetchApisComponent } from './bases/10-fetch-apis';
+import { CondicionalTernarioComponent } from './bases/12-condicional-ternario';
 
 
 
@@ -101,7 +102,7 @@ const App = () => {
 
                 <div className='content-component'>
                     <div className='resultado'>
-                        <PromesasComponent />
+                        {/* <PromesasComponent /> */}
                     </div>
                 </div>
                 <div className='linea'> </div>
@@ -109,10 +110,19 @@ const App = () => {
 
                 <div className='content-component'>
                     <div className='resultado'>
-                        <FetchApisComponent />
+                        {/* <FetchApisComponent /> */}
                     </div>
                 </div>
                 <div className='linea'> </div>
+
+
+                <div className='content-component'>
+                    <div className='resultado'>
+                        <CondicionalTernarioComponent /> 
+                    </div>
+                </div>
+                <div className='linea'> </div>
+
 
             </main>
 

@@ -21,11 +21,14 @@ peticion
         const {url} = data.images.original;
         console.log("URL", url);
 
+        const titulo = document.createElement('h1');
+        titulo.innerText = 'Imagen ejercicio de Fetch Api';
+        
         const img = document.createElement('img');
         img.src = url;
-        document.body.append(img);
 
-
+        document.body.appendChild(titulo);
+        document.body.appendChild(img);
     })
     .catch(console.warn);
 
