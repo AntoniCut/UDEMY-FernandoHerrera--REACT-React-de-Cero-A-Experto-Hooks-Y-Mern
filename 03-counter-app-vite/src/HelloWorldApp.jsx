@@ -1,6 +1,6 @@
-//  ********************************************************
-//  **********  /03-counter-app-vite/src/App.jsx  **********
-//  ********************************************************
+//  ******************************************************************
+//  **********  /03-counter-app-vite/src/HelloWorldApp.jsx  **********
+//  ******************************************************************
 
 
 import { useState } from 'react'
@@ -8,6 +8,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { FirstApp } from './FirstApp'
+import { CounterApp } from './CounterApp'
 
 
 //  **********  Componente Principal HelloWorldApp()  **********
@@ -27,7 +28,7 @@ export const HelloWorldApp = () => {
                     <img src={viteLogo} className="logo" alt="Vite logo" />
                 </a>
 
-                <h1> Hello World !!! </h1>
+                <h1> Hello World App !!! </h1>
 
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
@@ -39,10 +40,22 @@ export const HelloWorldApp = () => {
 
             </div>
 
+
+
+
             <div className="card">
-                <FirstApp />
+                <FirstApp title1="My Primer Componente de React" subTitle="Subtitulo del Componente" cantidades={123} />
+                {/* <FirstApp  /> */}
             </div>
-          
+            <div className="margen-inferior"> </div>
+
+            <div className="card">
+                <CounterApp value= {-100} />
+                {/* <CounterApp /> */}
+            </div>
+            <div className="margen-inferior"> </div>
+
+
 
         </main>
     );
