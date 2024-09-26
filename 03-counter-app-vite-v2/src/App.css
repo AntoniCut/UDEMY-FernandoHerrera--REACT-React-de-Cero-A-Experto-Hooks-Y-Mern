@@ -1,0 +1,181 @@
+/*  ********************************************************  */
+/*  **********  /03-counter-app-vite/src/App.css  **********  */
+/*  ********************************************************  */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+} */
+
+.main {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.header {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    min-height: 150px;
+    gap: 100px;
+    background-color: rgb(202, 212, 212);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  */
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    /* flex-grow: 1; */
+    background-color: bisque;
+}
+
+.logo {
+    height: 10em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 15s linear;
+    }
+}
+
+.titulo {
+    color: #000;
+}
+
+.subtitulos {
+    color: #4cb4b4;
+}
+
+.resultados {
+    color: #5BB0FF;
+}
+
+code {
+    font-size: 24px;
+}
+
+
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.counter-superior {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.counter-inferior {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-counter {
+    height: 40px;
+    line-height: 0px;
+    text-align: center;
+    font-size: 24px;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-counter:hover {
+    background-color: #5BB0FF;
+}
+
+
+.counter-marcador {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background-color: white;
+    border-radius: 100%;
+
+}
+
+.counter-font-size {
+    font-size: 48px;
+}
+
+.margen-inferior {
+    margin-bottom: 50px;
+}
+
+
+/*  **********  Responsive  **********  */
+
+@media( width < 1250px ) {
+
+    .header {
+        background-color: #4cb4b4;
+        gap: 50px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+        /* line-height: 1.1; */
+      }
+
+}
+
+
+@media( width < 1000px ) {
+
+    .logo {
+        height: 8em;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        gap: 30px;
+        /* line-height: 1.1; */
+      }
+
+}
+
+
+
+
+
