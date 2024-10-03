@@ -36,13 +36,13 @@ export const CounterApp = ({ value }) => {
             <div className="counter-container">
 
                 <div className="counter-superior">
-                    <button className="btn-counter" onClick={handleSubstract}> - </button>
+                    <button className="btn-counter" onClick={handleSubstract}> -1 </button>
                     <h2 className="resultados counter-font-size counter-marcador"> {counter} </h2>
-                    <button className="btn-counter" onClick={handleAdd}> + </button>
+                    <button className="btn-counter" onClick={handleAdd}> +1 </button>
                 </div>
 
                 <div className="counter-inferior">
-                <button className="btn-counter" onClick={handleReset}> Reset </button>
+                <button aria-label="btn-reset" className="btn-counter" onClick={handleReset}> Reset </button>
                 </div>
 
             </div>

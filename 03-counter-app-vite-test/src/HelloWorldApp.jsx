@@ -43,12 +43,12 @@ export const HelloWorldApp = () => {
 
             <div className="card">
 
-                <FirstApp title1="My Primer Componente de React" subTitle="Subtitulo del Componente" cantidades={123} />
+                <FirstApp title1="Hola, soy Vegeta" subTitle="Subtitulo del Componente" cantidades={123} />
                 {/* <FirstApp  /> */}
 
                 <div className="margen-inferior"> </div>
 
-                <CounterApp value={-100} />
+                <CounterApp value={100} />
                 {/* <CounterApp /> */}
 
                 <div className="margen-inferior"> </div>

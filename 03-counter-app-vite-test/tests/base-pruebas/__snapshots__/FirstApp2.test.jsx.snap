@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <FirstApp /> debe de hacer match con el snapshot 1`] = `
+<div>
+  <h2
+    class="titulo"
+  >
+     First App  
+  </h2>
+  <h2>
+     del Curso de React 
+  </h2>
+  <br />
+  <h1
+    class="subtitulos"
+    data-testid="test-title"
+  >
+     Titulo: 
+    <span
+      class="resultados"
+    >
+       
+       
+    </span>
+     
+  </h1>
+  <h2
+    class="subtitulos"
+  >
+     Subtitulo: 
+    <span
+      class="resultados"
+    >
+       
+      No hay Subtitulo
+       
+    </span>
+     
+  </h2>
+  <h2
+    class="subtitulos"
+  >
+     Subtitulo: 
+    <span
+      class="resultados"
+    >
+       
+      No hay Subtitulo
+       
+    </span>
+     
+  </h2>
+  <h2
+    class="subtitulos"
+  >
+     Cantidades: 
+    <span
+      class="resultados"
+    >
+       
+      0
+       
+    </span>
+     
+  </h2>
+  <h2
+    class="subtitulos"
+  >
+     Name:  
+    <span
+      class="resultados"
+    >
+       
+      Antonio Cutillas
+       
+    </span>
+     
+  </h2>
+  <br />
+  <h3
+    class="subtitulos"
+  >
+     La Función misValores() devuelve - 
+    <span
+      class="resultados"
+    >
+       
+      Antonio, 1,2,3,4,5,6,7,8,9, Hola Mundo, Antonio
+       
+    </span>
+     
+  </h3>
+  <h3
+    class="subtitulos"
+  >
+     Mi nombre es: 
+    <span
+      class="resultados"
+    >
+       
+      Antonio
+       
+    </span>
+     
+  </h3>
+  <h4
+    class="subtitulos"
+  >
+     Arr: 
+    <span
+      class="resultados"
+    >
+       
+      1
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+       
+    </span>
+     
+  </h4>
+   
+  <br />
+  <h4
+    class="subtitulos"
+  >
+     Obj: 
+    <span
+      class="resultados"
+    >
+       
+      Hola Mundo
+       - 
+      Antonio
+       
+    </span>
+     
+  </h4>
+  <code
+    class="resultados"
+  >
+     
+    {"message":"Hola Mundo","title":"Antonio"}
+     
+  </code>
+</div>
+`;

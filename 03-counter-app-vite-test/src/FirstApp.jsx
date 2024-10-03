@@ -40,12 +40,15 @@ export const FirstApp = ({ title1, subTitle, cantidades, name }) => {
     
     return (
         <>
-            <h1 className="titulo"> First App  </h1>
+            <h2 className="titulo"> First App  </h2>
             <h2> del Curso de React </h2>
             <br />
 
-            <h2 className="subtitulos"> Titulo: <span className="resultados"> {title1} </span> </h2> 
+            <h1 className="subtitulos" data-testid="test-title"> Titulo: <span className="resultados"> {title1} </span> </h1> 
+            
             <h2 className="subtitulos"> Subtitulo: <span className="resultados"> {subTitle} </span> </h2> 
+            <h2 className="subtitulos"> Subtitulo: <span className="resultados"> {subTitle} </span> </h2> 
+            
             <h2 className="subtitulos"> Cantidades: <span className="resultados"> {cantidades} </span> </h2>
             <h2 className="subtitulos"> Name:  <span className="resultados"> {name} </span> </h2>
 
@@ -75,10 +78,9 @@ FirstApp.propTypes = {
 
 
 //  -----  Default Props  -----
-
-// FirstApp.defaultProps = {
-//     title1: 'No Hay Título',
-//     subTitle: 'No hay Subtitulo',
-//     cantidades: 0,
-//     name: 'Antonio Cutillas'
-// }
+FirstApp.defaultProps = {
+    //title1: 'No Hay Título',
+    subTitle: 'No hay Subtitulo',
+    cantidades: 0,
+    name: 'Antonio Cutillas'
+}
