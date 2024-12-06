@@ -1,6 +1,6 @@
-//  **********************************************************************
-//  **********  /gif-expert-app/src/components/AddCategory.jsx  **********
-//  **********************************************************************
+//  ******************************************************************
+//  **********  /gif-expert-app/src/components/GifItem.jsx  **********
+//  ******************************************************************
 
 
 import PropTypes from 'prop-types';
@@ -26,4 +26,3 @@ GifItem.propTypes = {
     title: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
 };
-

@@ -7,14 +7,13 @@ import { useState } from "react";
 import { AddCategory, Header, GifGrid } from "./components";
 
 
-
 //  ----------------------------------------
 //  ----------  Componente PADRE  ----------
 //  ----------------------------------------
 export const GifExpertApp = () => {
 
 
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState(['España']);
     console.log(categories);
 
     const onAddCategory = newCategory => {

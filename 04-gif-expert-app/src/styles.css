@@ -161,3 +161,43 @@ li {
     width: 100px;
     height: 100px;
 }
+
+
+/*  *****  Responsive  *****  */
+@media (width < 1000px) {
+    
+    body {
+        padding: 10px;
+    }
+    .card-grid {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: none;
+        margin-right: none;
+        /* gap: 30px; */
+    }
+    .card {
+        width: 100%;
+    }
+   
+}
+
+@media (width < 785px) {
+    
+    h1 {
+        font-size: 1.2rem;
+      }
+      
+    .main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+   
+}
+
+@media (width < 400px) {
+    
+    .card {
+        width: 100%;
+    }
+}
