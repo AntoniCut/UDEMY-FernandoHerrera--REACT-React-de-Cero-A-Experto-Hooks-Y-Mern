@@ -1,10 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+//  -------------------------------------------------  
+//  ----------  /05-hook-app/src/main.jsx  ----------  
+//  -------------------------------------------------  
+
+
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { HooksApp } from './HooksApp';
+import './styles/index.css';
+
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+    <StrictMode>
+        <HooksApp />
+    </StrictMode>,
 )
