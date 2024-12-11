@@ -19,8 +19,9 @@ export const CounterApp = () => {
 
     return (
 
-        <div className="component__container">
-            <h1 className="header__title"> Counter App </h1>
+        <div className="component__container box-shadow">
+            
+            <h1 className="component__title"> Counter App </h1>
             <h2> Counter 1: {counter1} </h2>
             <h2> Counter 2: {counter2} </h2>
             <h2> Counter 3: {counter3} </h2>
@@ -28,7 +29,7 @@ export const CounterApp = () => {
             <hr />
 
             <button
-                className="btn btn-outline-info"
+                className="btn btn-info"
                 onClick={() => {
                     if (counter1 > 0)
                         setCounters({
@@ -41,7 +42,7 @@ export const CounterApp = () => {
             </button>
 
             <button
-                className="btn btn-outline-warning"
+                className="btn btn-warning"
                 onClick={() => setCounters({
                     ...state, // Mantenemos el resto del estado
                     counter1: 0, // Reiniciamos solo counter1
@@ -52,7 +53,7 @@ export const CounterApp = () => {
 
 
             <button
-                className="btn btn-outline-info"
+                className="btn btn-info"
                 onClick={() =>
                     setCounters({
                         ...state,

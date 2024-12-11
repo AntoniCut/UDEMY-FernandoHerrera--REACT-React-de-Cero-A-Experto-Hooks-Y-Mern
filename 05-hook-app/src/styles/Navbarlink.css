@@ -1,0 +1,68 @@
+/*  ******************************************************  */
+/*  **********  /01-apps-react-vite/  ********************  */
+/*  **********  /src/components/NavBarLink.jsx  **********  */
+/*  ******************************************************  */
+
+
+.navbarlink {
+    position: absolute;
+    top: 10px;
+    left: -320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.navbartitle {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: cornflowerblue;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.navbarlink a {
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.navbartitle:hover,
+.navbarlink a:hover {
+    background-color: rgb(18, 59, 136);
+    transform: scale(1.1);
+}
+
+.navbarlink a.active-link {
+    background-color: rgb(38, 76, 146);
+    font-weight: bold;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    transition: max-height 2s ease, opacity 0.5s ease; /* Duración de la animación ajustada */
+}
+
+.menu-closed {
+    max-height: 0; /* Cerrado */
+    /* opacity: 0; */
+    pointer-events: none; /* Deshabilitar clics */
+}
+
+.menu-open {
+    max-height: 500px; /* Asegúrate de que sea mayor a la altura máxima del contenido */
+    opacity: 1;
+}
