@@ -14,7 +14,7 @@ export const CounterWithCustomHook = () => {
 
         <div className="component__container box-shadow">
             
-            <h1 className="component__title"> Counter With Custom Hook: {counter} </h1>
+            <h1 className="component__title"> Counter With Custom Hook: {counter} - useCounter </h1>
             <hr />
 
             <button className="btn btn-primary" onClick={ () => decrement(2)} > -1 </button>

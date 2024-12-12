@@ -21,7 +21,7 @@ export const CounterApp = () => {
 
         <div className="component__container box-shadow">
             
-            <h1 className="component__title"> Counter App </h1>
+            <h1 className="component__title"> Counter App - useState </h1>
             <h2> Counter 1: {counter1} </h2>
             <h2> Counter 2: {counter2} </h2>
             <h2> Counter 3: {counter3} </h2>
