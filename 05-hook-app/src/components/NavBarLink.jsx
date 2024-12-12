@@ -47,7 +47,7 @@ export const NavBarLink = () => {
                     { path: '/counter-app', label: 'Counter App' },
                     { path: '/counter-with-custom-hook', label: 'Counter With Custom Hook' },
                     { path: '/simple-form', label: 'Simple Form' },
-                    //{ path: '/message', label: 'Message' },
+                    { path: '/form-with-custom-hook', label: 'Form With Custom Hook' },
                     
 
                 ].map(({ path, label }) => (
