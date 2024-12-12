@@ -40,8 +40,8 @@ button {
     background-color: #C1BEF5;
 }
 
-.height__container {
-    height: 600px;
+.height__container-600 {
+    min-height: 600px;
 }
 
 
@@ -50,4 +50,8 @@ button {
     font-size: 36px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pre__text {
+    text-align: left;
 }

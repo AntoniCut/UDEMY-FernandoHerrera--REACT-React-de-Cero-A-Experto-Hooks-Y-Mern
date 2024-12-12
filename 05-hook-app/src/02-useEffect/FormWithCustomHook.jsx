@@ -3,7 +3,7 @@
 //  ----------------------------------------------------------------------------
 
 
-import { useForm } from "../hooks/useForm"
+import { useForm } from "@/hooks/useForm";
 
 
 export const FormWithCustomHook = () => {
@@ -19,7 +19,7 @@ export const FormWithCustomHook = () => {
 
     return (
 
-        <div className="component__container height__container box-shadow">
+        <div className="component__container box-shadow">
 
             <h1 className="component__title"> FormWithCustomHook - useForm </h1>
             <hr /> <br />
@@ -52,7 +52,7 @@ export const FormWithCustomHook = () => {
             />
 
             <button 
-                className="btn btn-warning mt-3"
+                className="btn btn-warning mt-5"
                 value={''}
                 onClick={onResetForm}
             > 
