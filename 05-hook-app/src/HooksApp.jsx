@@ -13,6 +13,7 @@ import { CounterWithCustomHook } from "@/01-useState/CounterWithCustomHook";
 import { SimpleForm } from "@/02-useEffect/SimpleForm";
 import { FormWithCustomHook } from "@/02-useEffect/FormWithCustomHook";
 import { MultipleCustomHooks } from "@/03-example/MultipleCustomHooks";
+import { FocusScreen } from "./04-useRef/FocusScreen";
 
 
 export const HooksApp = () => {
@@ -27,15 +28,17 @@ export const HooksApp = () => {
 
             <Routes>
 
+                <Route path="/" />
                 <Route path="/counter-app" element={<CounterApp />} />
                 <Route path="/counter-with-custom-hook" element={<CounterWithCustomHook />} />
                 <Route path="/simple-form" element={<SimpleForm />} />
                 <Route path="/form-with-custom-hook" element={<FormWithCustomHook />} />
+                <Route path="/multiple-custom-hooks" element={<MultipleCustomHooks />} />
+                <Route path="/focus-screen" element={<FocusScreen />} />
 
             </Routes>
 
-            <MultipleCustomHooks />
-            
+                        
 
         </div>
     )

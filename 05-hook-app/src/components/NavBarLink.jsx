@@ -43,11 +43,13 @@ export const NavBarLink = () => {
                 style={{ maxHeight: '0px', overflow: 'hidden', transition: 'max-height 2s ease, opacity 0.5s ease' }}
             >
                 {[
-
+                    { path: '/', label: 'Home' },
                     { path: '/counter-app', label: 'Counter App' },
                     { path: '/counter-with-custom-hook', label: 'Counter With Custom Hook' },
                     { path: '/simple-form', label: 'Simple Form' },
                     { path: '/form-with-custom-hook', label: 'Form With Custom Hook' },
+                    { path: '/multiple-custom-hooks', label: 'Multiple Custom Hooks' },
+                    { path: '/focus-screen', label: 'Focus Screen' },
                     
 
                 ].map(({ path, label }) => (
