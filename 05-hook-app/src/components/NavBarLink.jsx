@@ -50,6 +50,7 @@ export const NavBarLink = () => {
                     { path: '/form-with-custom-hook', label: 'Form With Custom Hook' },
                     { path: '/multiple-custom-hooks', label: 'Multiple Custom Hooks' },
                     { path: '/focus-screen', label: 'Focus Screen' },
+                    { path: '/layout', label: 'Layout' },
                     
 
                 ].map(({ path, label }) => (

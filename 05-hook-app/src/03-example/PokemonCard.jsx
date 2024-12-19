@@ -3,16 +3,31 @@
 //  -----------------------------------------------------------------------
 
 
+
 import PropTypes from 'prop-types';
+import { useLayoutEffect, useRef, useState } from 'react';
 
 
 export const PokemonCard = ({ id, name, sprites = [] }) => {
 
+
+    const h2Ref = useRef();
+    const [boxSise, setBoxSize] = useState({ height: 0, width: 0})
+
+    useLayoutEffect( () => {
+        
+        const { height, width } = h2Ref.current.getBoundingClientRect();
+        setBoxSize({ height, width})
+        console.log({height, width});
+
+    }, [name]);
+
+
     return (
 
-        <section style={{ height: 200}}>
+        <section ref={h2Ref}  style={{ height: 300, display: 'flex', flexDirection: 'column'}}>
 
-            <h2 className="text-capitalize"> #{id} - { name } </h2>
+            <h2  className="text-capitalize"> #{id} - { name } </h2>
 
             <br/>
             
@@ -24,13 +39,9 @@ export const PokemonCard = ({ id, name, sprites = [] }) => {
                 }
             </div>
 
-
+            <pre> { JSON.stringify(boxSise) } </pre>
 
         </section>
-
-
-
-
     )
 }
 
@@ -41,5 +52,3 @@ PokemonCard.propTypes = {
     name: PropTypes.string.isRequired,
     sprites: PropTypes.array          
 };
-  
- export default PokemonCard;

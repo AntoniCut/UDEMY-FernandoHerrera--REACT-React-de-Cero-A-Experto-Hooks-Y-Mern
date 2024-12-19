@@ -1,6 +1,6 @@
-//  -----------------------------------------------------------------------------
-//  ----------  /05-hook-app/src/03-examples/MultiplesCustomHooks.jsx  ----------
-//  -----------------------------------------------------------------------------
+//  -----------------------------------------------------------------------
+//  ----------  /05-hook-app/src/05-useLayoutEffect/Layouts.jsx  ----------
+//  -----------------------------------------------------------------------
 
 
 import { useState } from "react";
@@ -11,7 +11,7 @@ import { PokemonCard } from "@/03-example/PokemonCard";
 
 
 
-export const MultipleCustomHooks = () => {
+export const Layout = () => {
     
     
     const { counter, decrement, increment } = useCounter(1);
@@ -30,7 +30,7 @@ export const MultipleCustomHooks = () => {
         
         <div className="component__container height__container-600 box-shadow">
             
-            <h1 className="component__title"> Multiple Custom Hooks - useFetch + useCounter </h1>
+            <h1 className="component__title"> Layout - useLayoutEffect </h1>
             <hr /> <br />
             
             <h2> Información de Pokemons </h2>
@@ -53,8 +53,8 @@ export const MultipleCustomHooks = () => {
                   	/> 
 				)
             }
-
-            { HasError && <p> Ocurrió un error al cargar los datos </p> }            
+         
+            { HasError && <p> Ocurrió un error al cargar los datos </p> }
 
             <button 
                 className="btn btn-primary mt-4"
