@@ -51,6 +51,7 @@ export const NavBarLink = () => {
                     { path: '/multiple-custom-hooks', label: 'Multiple Custom Hooks' },
                     { path: '/focus-screen', label: 'Focus Screen' },
                     { path: '/layout', label: 'Layout' },
+                    { path: '/memorize', label: 'Memorize' },
                     
 
                 ].map(({ path, label }) => (
