@@ -18,6 +18,7 @@ import { Layout } from "@/05-useLayoutEffect/Layout";
 import { Memorize } from "@/06-memos/Memorize";
 import { MemorHook } from "@/06-memos/MemoHook";
 import { CallbackHook } from "@/06-memos/CallbackHook";
+import { Padre } from "@/07-tarea-memo/Padre";
 
 
 export const HooksApp = () => {
@@ -41,6 +42,7 @@ export const HooksApp = () => {
                 <Route path="/memorize" element={<Memorize />} />
                 <Route path="/memohook" element={<MemorHook />} />
                 <Route path="/callbackhook" element={<CallbackHook />} />
+                <Route path="/tarea-memo" element={<Padre />} />
 
             </Routes>
 

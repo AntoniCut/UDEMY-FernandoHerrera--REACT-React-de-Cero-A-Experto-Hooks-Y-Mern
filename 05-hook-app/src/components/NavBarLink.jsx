@@ -54,6 +54,7 @@ export const NavBarLink = () => {
                     { path: '/memorize', label: 'Memorize' },
                     { path: '/memohook', label: 'Memo Hook' },
                     { path: '/callbackhook', label: 'CallBack Hook' },
+                    { path: '/tarea-memo', label: 'Tarea Memo' },
                     
 
                 ].map(({ path, label }) => (
