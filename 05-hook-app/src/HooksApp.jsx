@@ -6,7 +6,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import { Headers } from "@/components/Headers";
-import { NavBarLink } from "@/components/NavBarLink";
+//import { NavBarLink } from "@/components/NavBarLink";
 
 import { CounterApp } from "@/01-useState/CounterApp";
 import { CounterWithCustomHook } from "@/01-useState/CounterWithCustomHook";
@@ -17,6 +17,7 @@ import { FocusScreen } from "@/04-useRef/FocusScreen";
 import { Layout } from "@/05-useLayoutEffect/Layout";
 import { Memorize } from "@/06-memos/Memorize";
 import { MemorHook } from "@/06-memos/MemoHook";
+import { CallbackHook } from "@/06-memos/CallbackHook";
 
 
 export const HooksApp = () => {
@@ -27,11 +28,9 @@ export const HooksApp = () => {
 
             <Headers />
 
-            <NavBarLink />
-
             <Routes>
 
-                <Route path="/" />
+                <Route path="/" element={<CounterApp />} />
                 <Route path="/counter-app" element={<CounterApp />} />
                 <Route path="/counter-with-custom-hook" element={<CounterWithCustomHook />} />
                 <Route path="/simple-form" element={<SimpleForm />} />
@@ -41,6 +40,7 @@ export const HooksApp = () => {
                 <Route path="/layout" element={<Layout />} />
                 <Route path="/memorize" element={<Memorize />} />
                 <Route path="/memohook" element={<MemorHook />} />
+                <Route path="/callbackhook" element={<CallbackHook />} />
 
             </Routes>
 

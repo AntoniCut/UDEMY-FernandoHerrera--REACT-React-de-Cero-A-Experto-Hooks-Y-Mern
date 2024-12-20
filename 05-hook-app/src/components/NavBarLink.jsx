@@ -53,6 +53,7 @@ export const NavBarLink = () => {
                     { path: '/layout', label: 'Layout' },
                     { path: '/memorize', label: 'Memorize' },
                     { path: '/memohook', label: 'Memo Hook' },
+                    { path: '/callbackhook', label: 'CallBack Hook' },
                     
 
                 ].map(({ path, label }) => (

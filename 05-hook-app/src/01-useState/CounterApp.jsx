@@ -24,7 +24,7 @@ export const CounterApp = () => {
 
     return (
 
-        <div className="component__container box-shadow">
+        <div className="component__container height__container-600 box-shadow">
             
             <h1 className="component__title"> Counter App - useState </h1>
             <h2> Counter 1: {counter1} </h2>

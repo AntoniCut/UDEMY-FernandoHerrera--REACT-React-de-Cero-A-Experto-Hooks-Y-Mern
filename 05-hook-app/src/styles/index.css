@@ -9,7 +9,8 @@
 
 body {
     position: relative;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     background: url('../assets/background-curvas-suaves.jpeg');
@@ -35,7 +36,9 @@ button {
 
 
 .component__container {
+    width: 100%;
     padding: 60px;
+    margin-top: 70px;
     margin-bottom: 20px;
     background-color: #C1BEF5;
 }
@@ -54,4 +57,30 @@ button {
 
 .pre__text {
     text-align: left;
+}
+
+
+
+/*  ----------------------------------  */
+/*  ----------  Responsive  ----------  */
+/*  ----------------------------------  */
+
+@media(max-width: 450px) {
+    
+    .navbarlink {
+        width: 100%;
+        top: 22%;
+        left: 19%;
+    }
+
+    .component__container {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 325px) {
+    
+    .navbarlink {
+        left: 11%;
+    }
 }

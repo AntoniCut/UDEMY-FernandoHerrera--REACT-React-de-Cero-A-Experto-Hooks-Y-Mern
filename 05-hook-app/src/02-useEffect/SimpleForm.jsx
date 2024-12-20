@@ -41,7 +41,7 @@ export const SimpleForm = () => {
 
     return (
 
-        <div className="component__container box-shadow">
+        <div className="component__container height__container-600 box-shadow">
 
             <h1 className="component__title"> Formulario Simple - useEffect </h1>
             <hr /> <br />

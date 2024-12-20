@@ -25,7 +25,7 @@ export const FormWithCustomHook = () => {
 
     return (
 
-        <div className="component__container box-shadow">
+        <div className="component__container height__container-600 box-shadow">
 
             <h1 className="component__title"> FormWithCustomHook - useForm </h1>
             <hr /> <br />
