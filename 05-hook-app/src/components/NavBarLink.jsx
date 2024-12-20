@@ -52,6 +52,7 @@ export const NavBarLink = () => {
                     { path: '/focus-screen', label: 'Focus Screen' },
                     { path: '/layout', label: 'Layout' },
                     { path: '/memorize', label: 'Memorize' },
+                    { path: '/memohook', label: 'Memo Hook' },
                     
 
                 ].map(({ path, label }) => (

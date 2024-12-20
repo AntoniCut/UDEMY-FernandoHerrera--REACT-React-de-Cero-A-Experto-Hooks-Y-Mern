@@ -13,9 +13,10 @@ import { CounterWithCustomHook } from "@/01-useState/CounterWithCustomHook";
 import { SimpleForm } from "@/02-useEffect/SimpleForm";
 import { FormWithCustomHook } from "@/02-useEffect/FormWithCustomHook";
 import { MultipleCustomHooks } from "@/03-example/MultipleCustomHooks";
-import { FocusScreen } from "./04-useRef/FocusScreen";
-import { Layout } from "./05-useLayoutEffect/Layout";
-import { Memorize } from "./06-memos/Memorize";
+import { FocusScreen } from "@/04-useRef/FocusScreen";
+import { Layout } from "@/05-useLayoutEffect/Layout";
+import { Memorize } from "@/06-memos/Memorize";
+import { MemorHook } from "@/06-memos/MemoHook";
 
 
 export const HooksApp = () => {
@@ -39,6 +40,7 @@ export const HooksApp = () => {
                 <Route path="/focus-screen" element={<FocusScreen />} />
                 <Route path="/layout" element={<Layout />} />
                 <Route path="/memorize" element={<Memorize />} />
+                <Route path="/memohook" element={<MemorHook />} />
 
             </Routes>
 

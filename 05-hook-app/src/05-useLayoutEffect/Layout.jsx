@@ -3,7 +3,7 @@
 //  -----------------------------------------------------------------------
 
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFetch } from "@/hooks/useFetch";
 import { useCounter } from "@/hooks/useCounter";
 import { LoadingMessage } from "@/03-example/LoadingMessage";
@@ -12,6 +12,11 @@ import { PokemonCard } from "@/03-example/PokemonCard";
 
 
 export const Layout = () => {
+    
+
+    useEffect( () => {
+        document.title = 'Layout';
+    }, []);
     
     
     const { counter, decrement, increment } = useCounter(1);

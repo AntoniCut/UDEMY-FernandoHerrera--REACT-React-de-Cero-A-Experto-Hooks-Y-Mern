@@ -10,6 +10,11 @@ import { Message } from "./Message";
 export const SimpleForm = () => {
 
 
+    useEffect( () => {
+        document.title = 'Simple Form';
+    }, []);
+
+
     const [formState, setformState] = useState({
         username: 'strider',
         email: 'antonicut@gmail.com'

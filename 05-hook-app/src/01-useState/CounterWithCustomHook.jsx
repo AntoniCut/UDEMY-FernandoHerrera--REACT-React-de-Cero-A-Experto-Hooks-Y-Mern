@@ -3,10 +3,15 @@
 //  ------------------------------------------------------------------------------
 
 
+import { useEffect } from "react";
 import { useCounter } from "@/hooks/useCounter";
 
 
 export const CounterWithCustomHook = () => {
+
+    useEffect( () => {
+        document.title = 'Counter With Custom Hook';
+    }, []);
 
     const { counter, decrement, reset, increment } = useCounter();
 

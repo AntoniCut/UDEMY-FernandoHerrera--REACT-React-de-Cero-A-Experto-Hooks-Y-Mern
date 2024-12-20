@@ -3,10 +3,15 @@
 //  -------------------------------------------------------------------
 
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export const CounterApp = () => {
+
+
+    useEffect( () => {
+        document.title = 'Counter App';
+    }, []);
 
     const [state, setCounters] = useState({
         counter1: 10,

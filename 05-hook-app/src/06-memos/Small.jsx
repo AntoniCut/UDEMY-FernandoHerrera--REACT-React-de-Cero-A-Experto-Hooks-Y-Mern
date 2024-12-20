@@ -25,4 +25,3 @@ Small.displayName = 'Small';
 Small.propTypes = {
     value: PropTypes.number.isRequired
 }
-

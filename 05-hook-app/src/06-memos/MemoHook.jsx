@@ -1,23 +1,39 @@
 //  --------------------------------------------------------------
-//  ----------  /05-hook-app/src/06-memos/Memorize.jsx  ----------
+//  ----------  /05-hook-app/src/06-memos/MemoHook.jsx  ----------
 //  --------------------------------------------------------------
 
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useCounter} from "@/hooks/useCounter";
-import { Small } from "./Small";
+import { Small } from "@/06-memos/Small";
 
 
-export const Memorize = () => {
+
+
+const heavyStuff = ( iterationNumber = 100 ) => {
+
+    for( let i = 0; i < iterationNumber; i++) {
+        console.log('Ahí vamos.....');
+    }
+
+    return `${ iterationNumber } iteraciones realizadas`;
+}
+
+
+export const MemorHook = () => {
 
 
     useEffect( () => {
-        document.title = 'Memorize';
+        document.title = 'Memo Hook';
     }, []);
 
-    const { counter, decrement, reset, increment } = useCounter(10);
 
+    const { counter, decrement, reset, increment } = useCounter(4000);
     const [show, setShow] = useState(true);
+
+
+    //  -----  useMemo()  -----
+    const memorizedValue = useMemo( () => heavyStuff( counter ), [ counter ]);
         
 
 
@@ -25,12 +41,14 @@ export const Memorize = () => {
 
         <div className="component__container height__container-600 box-shadow">
 
-            <h1 className="component__title"> Memorize </h1>
+            <h1 className="component__title"> Memo Hook - useMemo </h1>
             <hr /> <br />
 
             <h2> Counter: <Small value={ counter } /> </h2>
-            
             <hr />
+
+            <h4> { memorizedValue } </h4>
+            <hr/>
 
             <button
                 className="btn btn-info"

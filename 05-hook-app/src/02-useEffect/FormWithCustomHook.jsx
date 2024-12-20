@@ -3,11 +3,17 @@
 //  ----------------------------------------------------------------------------
 
 
+import { useEffect } from "react";
 import { useForm } from "@/hooks/useForm";
 
 
 export const FormWithCustomHook = () => {
 
+
+    useEffect( () => {
+            document.title = 'Form With Custom Hook';
+        }, []);
+    
     const { onInputChange, onResetForm , username, email, password } = useForm({
         username: '',
         email: '',

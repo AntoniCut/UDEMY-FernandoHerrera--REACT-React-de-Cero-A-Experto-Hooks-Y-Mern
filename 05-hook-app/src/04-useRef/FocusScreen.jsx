@@ -3,11 +3,15 @@
 //  ------------------------------------------------------------------
 
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 
 export const FocusScreen = () => {
 
+
+    useEffect( () => {
+        document.title = 'Focus Screen';
+    }, []);
 
     //  -----  useRef()  -----
     const inputRef = useRef();
