@@ -9,6 +9,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState, useRef } from 'react';
 
 
+const base = '/pruebas/hook-app';
+
+
 export const NavBarLink = () => {
 
     const location = useLocation();
@@ -43,18 +46,18 @@ export const NavBarLink = () => {
                 style={{ maxHeight: '0px', overflow: 'hidden', transition: 'max-height 2s ease, opacity 0.5s ease' }}
             >
                 {[
-                    { path: '/', label: 'Home' },
-                    { path: '/counter-app', label: 'Counter App' },
-                    { path: '/counter-with-custom-hook', label: 'Counter With Custom Hook' },
-                    { path: '/simple-form', label: 'Simple Form' },
-                    { path: '/form-with-custom-hook', label: 'Form With Custom Hook' },
-                    { path: '/multiple-custom-hooks', label: 'Multiple Custom Hooks' },
-                    { path: '/focus-screen', label: 'Focus Screen' },
-                    { path: '/layout', label: 'Layout' },
-                    { path: '/memorize', label: 'Memorize' },
-                    { path: '/memohook', label: 'Memo Hook' },
-                    { path: '/callbackhook', label: 'CallBack Hook' },
-                    { path: '/tarea-memo', label: 'Tarea Memo' },
+                    { path: `${base}/`, label: 'Home' },
+                    { path: `${base}/counter-app`, label: 'Counter App' },
+                    { path: `${base}/counter-with-custom-hook`, label: 'Counter With Custom Hook' },
+                    { path: `${base}/simple-form`, label: 'Simple Form' },
+                    { path: `${base}/form-with-custom-hook`, label: 'Form With Custom Hook' },
+                    { path: `${base}/multiple-custom-hooks`, label: 'Multiple Custom Hooks' },
+                    { path: `${base}/focus-screen`, label: 'Focus Screen' },
+                    { path: `${base}/layout`, label: 'Layout' },
+                    { path: `${base}/memorize`, label: 'Memorize' },
+                    { path: `${base}/memohook`, label: 'Memo Hook' },
+                    { path: `${base}/callbackhook`, label: 'CallBack Hook' },
+                    { path: `${base}/tarea-memo`, label: 'Tarea Memo' },
                     
 
                 ].map(({ path, label }) => (

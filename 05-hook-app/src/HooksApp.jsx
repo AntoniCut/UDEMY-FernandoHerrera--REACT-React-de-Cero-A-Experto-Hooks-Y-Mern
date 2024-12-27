@@ -21,6 +21,9 @@ import { CallbackHook } from "@/06-memos/CallbackHook";
 import { Padre } from "@/07-tarea-memo/Padre";
 
 
+const base = '/pruebas/hook-app';
+
+
 export const HooksApp = () => {
 
     return (
@@ -31,18 +34,21 @@ export const HooksApp = () => {
 
             <Routes>
 
-                <Route path="/" element={<CounterApp />} />
-                <Route path="/counter-app" element={<CounterApp />} />
-                <Route path="/counter-with-custom-hook" element={<CounterWithCustomHook />} />
-                <Route path="/simple-form" element={<SimpleForm />} />
-                <Route path="/form-with-custom-hook" element={<FormWithCustomHook />} />
-                <Route path="/multiple-custom-hooks" element={<MultipleCustomHooks />} />
-                <Route path="/focus-screen" element={<FocusScreen />} />
-                <Route path="/layout" element={<Layout />} />
-                <Route path="/memorize" element={<Memorize />} />
-                <Route path="/memohook" element={<MemorHook />} />
-                <Route path="/callbackhook" element={<CallbackHook />} />
-                <Route path="/tarea-memo" element={<Padre />} />
+            <Route path={`${base}/pruebas/hook-app/`} element={<CounterApp />} />
+
+
+                <Route path={`${base}/`} element={<CounterApp />} />
+                <Route path={`${base}/counter-app`} element={<CounterApp />} />
+                <Route path={`${base}/counter-with-custom-hook`} element={<CounterWithCustomHook />} />
+                <Route path={`${base}/simple-form`} element={<SimpleForm />} />
+                <Route path={`${base}/form-with-custom-hook`} element={<FormWithCustomHook />} />
+                <Route path={`${base}/multiple-custom-hooks`} element={<MultipleCustomHooks />} />
+                <Route path={`${base}/focus-screen`} element={<FocusScreen />} />
+                <Route path={`${base}/layout`} element={<Layout />} />
+                <Route path={`${base}/memorize`} element={<Memorize />} />
+                <Route path={`${base}/memohook`} element={<MemorHook />} />
+                <Route path={`${base}/callbackhook`} element={<CallbackHook />} />
+                <Route path={`${base}/tarea-memo`} element={<Padre />} />
 
             </Routes>
 
